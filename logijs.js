@@ -88,7 +88,7 @@
 				var ref = firebase.database().ref("users/");
 				ref.once("value").then(function(snapshot) {
 					if(snapshot.hasChild(firebaseUser.uid)){
-						window.alert("lol");
+						//window.alert("lol");
 						window.globalUid = firebase.auth().currentUser.uid;
 					}					// true
 					else{
@@ -100,7 +100,7 @@
 						
 						window.globalUid = firebase.auth().currentUser.uid;
 						
-						window.alert("not created yet");
+						//window.alert("not created yet");
 						//firebase.database().ref('users/' + firebase.auth()).set({email: email});
 						//firebase.database().ref('users/' + firebase.auth().currentUser.uid).set({email: txtEmail});
 					}
